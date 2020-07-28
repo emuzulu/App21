@@ -1,17 +1,15 @@
-<!DOCTYPE>
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>Intern21.com</title>
       {% load static %}
-  <meta name="author" content="Evans Muzulu">
-  <meta name="description" content="Intern21 is a website to keep track of your applications to jobs/ internships/ colleges">
-  <meta name="keywords" content="apply, intern, summer 2021">
+  <!meta name="author" content="Evans Muzulu">
+  <!meta name="description" content="Intern21 is a website to keep track of your endeavours">
+  <!meta name="keywords" content="apply, intern, summer 2021">
     <link rel="stylesheet" href="{% static 'intern21/main.css' %}" type="text/css">
       <script src="https://kit.fontawesome.com/37a6876824.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap" rel="stylesheet">
@@ -28,17 +26,17 @@
           </li>
 
           <div class="items">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Applications</a></li>
+            <li> <a href="{% url 'index' %}">Home</a></li>
+            <li> <a href="{% url 'applications' %}">Applications</a></li>
             <li> <a href="#">Resources</a></li>
             <li> <a href="#">About</a></li>
-            <li> <a href="#">Logout</a></li>
+            <li> <a href="#">Username</a></li>
           </div>
 
           <li class="search-icon">
               <input type="search-icon" placeholder="Search">
               <label for="" class="icon">
-                <span class="fas fa-search"></span>
+                  <span class="fas fa-search"></span>
               </label>
 
           </li>

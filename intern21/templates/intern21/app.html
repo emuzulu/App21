@@ -1,0 +1,62 @@
+{% extends "intern21/layout.html" %}
+
+{% block body %}
+
+
+    <div class="item-table">
+
+        <table class="content-table">
+            <thead>
+
+                <tr>
+                    <th>Institution</th>
+                    <th>Role</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for app in apps %}
+                <tr>
+
+                        <td>{{ app.company }}</td>
+                        <td>{{ app.role}}</td>
+                        <td>{{app.date}}</td>
+                        <td>
+                            <form action="{% url 'delete' app.id %}" method="post">
+                                {% csrf_token %}
+                                <input name = "delete" class="delete" type="submit" value="Delete">
+                            </form>
+                        </td>
+
+
+                </tr>
+                {% endfor %}
+
+                <tr>
+                    <form method="POST" action="{% url 'add'%}">
+                        {% csrf_token %}
+                        <td><input name= "company" id = "company" class="text-input" type="text" placeholder="Company"></td>
+                        <td><input name="role" id = "role" class="text-input" type="text" placeholder="Role"></td>
+                        <td> </td>
+                        <td> <input class="add" type="submit" value="Submit"></td>
+                    </form>
+
+                </tr>
+
+            </tbody>
+
+
+
+
+        </table>
+
+    </div>
+
+
+
+
+{% endblock %}
