@@ -4,7 +4,10 @@
 
 Submitted by: **Evans Muzulu**
 
-Features: Can add and delete applications from the list and also add notes and reminders to the list. 
+Features:  
+- Add and delete applications from the list and also add notes and reminders to the list. 
+- A platform to have everyone post new internships and resources for people to use and to make into a database of internships
+
 
 ## License
 
