@@ -1,4 +1,4 @@
-# * App21*
+# * App21* 😁
 
 **App21** is a way to keep track of applications to jobs and colleges for students and people looking to gain employment.
 
