@@ -9,6 +9,11 @@ Features:
 - A platform to have everyone post new internships and resources for people to use and to make into a database of internships
 
 
+Working on:
+- RESTAPI to allow third party platforms and apps to access User data when authenticated properly. 
+- Redesigning UI to fit a modern design. 
+
+
 ## License
 
     Copyright [2020] [Evans Muzulu]
